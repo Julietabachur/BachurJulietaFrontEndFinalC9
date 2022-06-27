@@ -1,0 +1,70 @@
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/imagenes/bg-simplify-section-mobile.svg) ;
+    font-size: 16px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+p{
+    color: #B3B2B7;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.diferencias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.diferencia{
+    
+}
+
+button{
+    background-color: #F3613C;
+    border-radius: 30px;
+    border: solid;
+    color: #FFFFFF;
+    padding: 10px 25px;
+}
+
+@media screen and (min-width: 1440px) {
+
+    body{
+        background-image: url(/imagenes/bg-simplify-section-desktop.svg);
+    
+    }
+    
+}
