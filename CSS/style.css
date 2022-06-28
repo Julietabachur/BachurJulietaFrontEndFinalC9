@@ -4,10 +4,21 @@
 }
 
 body{
-    background-image: url(/imagenes/bg-simplify-section-mobile.svg) ;
-    background-color: rgba(243, 97, 60, 0.2);
+    background-image: url(/imagenes/bg-tablet-pattern.svg) ;
     font-size: 16px;
+    background-repeat: space;
+    animation: fondo 15s infinite;
+    background-color: #FFFFFF;
+    background-position: top right;
 
+
+
+}
+
+@keyframes fondo {
+    50%{
+        background-position: bottom;
+    }
 }
 
 header{
@@ -34,6 +45,14 @@ main{
     flex-direction: column;
     align-items: center;
     
+}
+
+.dif-titulo{
+    background-color: rgba(243, 97, 60, 0.2);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .testimonio2{
