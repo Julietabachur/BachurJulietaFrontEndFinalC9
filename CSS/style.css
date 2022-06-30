@@ -10,9 +10,6 @@ body{
     animation: fondo 15s infinite;
     background-color: #FFFFFF;
     background-position: top right;
-
-
-
 }
 
 @keyframes fondo {
@@ -24,7 +21,8 @@ body{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 2rem 0;
 }
 
 nav, .hdr-btn{
@@ -36,9 +34,13 @@ main{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-
+    margin: 2rem 0;
 }
 
+main img{
+    height: 15rem;
+    width: 16rem;
+}
 .testimonios{
     display: flex;
     justify-content: center;
@@ -89,6 +91,10 @@ h1, h2, h3{
     text-align: center;
 }
 
+.main-text p{
+    text-align: justify;
+}
+
 .diferencias{
     display: flex;
     flex-direction: column;
@@ -104,7 +110,7 @@ h1, h2, h3{
 button, input[type= submit]{
     background-color: #F3613C;
     border-radius: 30px;
-    border: solid;
+    border: none;
     color: #FFFFFF;
     padding: 10px 25px;
 }
@@ -113,6 +119,8 @@ input[type=search]{
     background-color: #FFFFFF;
     border-radius: 30px;
     border: solid;
+    height: 2rem;
+    padding: 1.3rem;
 }
 
 a{
@@ -132,18 +140,41 @@ a{
     background-color:#1E1E26;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
+    height: 30rem;
+}
 
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-evenly;
+}
+
+.nav1, .nav2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 15rem;
 }
 
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 375px) {
 
     body{
         background-image: url(/imagenes/bg-simplify-section-desktop.svg);
     
     }
+
+
     
 }
