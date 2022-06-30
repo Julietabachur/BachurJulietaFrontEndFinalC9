@@ -1,6 +1,8 @@
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
     box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
 }
 
 body{
@@ -22,7 +24,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
 
 nav, .hdr-btn{
@@ -41,34 +43,60 @@ main img{
     height: 15rem;
     width: 16rem;
 }
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center ;
+    flex-wrap: wrap;
+    height: 20rem;
+}
+
 .testimonios{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0;
-    
-}
-
-.dif-titulo{
-    background-color: rgba(243, 97, 60, 0.2);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
+    height: 30rem;
     justify-content: space-around;
 }
 
-.testimonio2{
+.testimonios img{
+    width: 70px;
+    height: 70px;
+
+}
+
+.dif-titulo{
+    background-color: rgb(255, 239, 234);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dif-titulo h3{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+
+.testimonio1, .testimonio3, .testimonio2{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    height: 15rem;
 }
+
 
 .testimonio1, .testimonio3{
     display: none;
 }
+
 
 .puntitos{
     color:#F3613C;
@@ -84,37 +112,66 @@ h1, h2, h3{
     text-align: center;
 }
 
-.main-text{
+.diferencias-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: space-around;
+    height: 14rem;
 }
 
 .main-text p{
-    text-align: justify;
+    text-align: center;
 }
 
 .diferencias{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45rem;
+    padding: 1rem;
+}
+
+.dif>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 12rem;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.diferencia{
-    
-}
+
+
 
 button, input[type= submit]{
     background-color: #F3613C;
-    border-radius: 30px;
+    border-radius: 50px;
     border: none;
     color: #FFFFFF;
     padding: 10px 25px;
 }
+
+.getStarted{
+    font-size: 13.1806px;
+}
+
 
 input[type=search]{
     background-color: #FFFFFF;
@@ -135,8 +192,10 @@ a{
     align-items: center;
     text-align: center;
     padding: 3rem 1rem;
-
+    height: 15rem;
+    justify-content: space-between;
 }
+
 
 .footer-1 h2{
     color: #FFFFFF;
@@ -158,13 +217,23 @@ a{
     align-items: center;
     text-align: center;
     height: 30rem;
+    padding: 1rem 0.5rem;
+}
+
+.footer-2 p{
+    font-size: 12.5px;
+    color: #8C8C94;
 }
 
 .footer-nav{
     display: flex;
     flex-direction: row;
-    padding: 2rem;
-    justify-content: space-evenly;
+    padding: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 20rem;
+    height: 12rem;
+    font-size: 0.9rem;
 }
 
 .nav1, .nav2{
@@ -173,22 +242,61 @@ a{
     align-items: flex-start;
     justify-content: space-between;
 }
+
+.nav2{
+    height: 5rem;
+}
+
+.redes-y-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5rem;
+}
+
 .redes{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 15rem;
+    justify-content: space-between;
+    width: 18rem;
+    
+}
+
+.redes img{
+    height: 2rem;
+    width: 2rem;
 }
 
 
 
 @media screen and (min-width: 375px) {
 
-    body{
-        background-image: url(/imagenes/bg-simplify-section-desktop.svg);
-    
+    nav, .hdr-btn{
+        display: flex;
     }
 
+    .burger{
+        display: none;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .div-nav{
+        display: flex;        
+        align-items: center;
+    }
+
+    nav{
+        justify-content: space-between;
+        width: 10rem;
+    }
+
+    nav a{
+        color: #1E1E26;
+    }
 
     
 }
