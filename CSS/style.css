@@ -115,6 +115,7 @@ p{
 
 h1, h2, h3{
     text-align: center;
+    font-weight: 700;
 }
 
 .diferencias-text{
@@ -287,14 +288,134 @@ a{
     
 }
 
-.redes img{
+.redes a div{
     height: 2rem;
     width: 2rem;
 }
 
+.fb{
+    background-image: url(/imagenes/icon-facebook.svg);
+    background-repeat: no-repeat;
+}
+
+.fb:hover{
+    background-image: url(/imagenes/icon-facebook-naranja.svg);
+}
+
+.youtube{
+    background-image: url(/imagenes/icon-youtube.svg);
+    background-repeat: no-repeat;
+}
+
+.youtube:hover{
+    background-image: url(/imagenes/icon-youtube-naranja.svg);
+}
+
+.tw{
+    background-image: url(/imagenes/icon-twitter.svg);
+    background-repeat: no-repeat;
+}
+
+.tw:hover{
+    background-image: url(/imagenes/icon-twitter-naranja.svg);
+}
+
+.pinterest{
+    background-image: url(/imagenes/icon-pinterest.svg);
+    background-repeat: no-repeat;
+}
+
+.pinterest:hover{
+    background-image: url(/imagenes/icon-pinterest-naranja.svg);
+}
+
+.ig{
+    background-image: url(/imagenes/icon-instagram.svg);
+    background-repeat: no-repeat;
+}
+
+.ig:hover{
+    background-image: url(/imagenes/icon-instagram-naranja.svg);
+}
+
+@media screen and (min-width: 375px){
+
+    .main-text{
+        width: 20rem;
+    }
+
+    .dif{
+        height: 30rem;
+    }
+
+    .dif-titulo{
+        width: 20rem;
+    }
+
+    .dif-titulo h3{
+        margin-left: 1rem;
+    }
+
+    .diferencias-text{
+        width: 25rem;
+    }
+
+    .dif>div p{        
+        width: 25rem;
+        flex-wrap: wrap;
+    }
+
+    .testimonios>div p{
+        width: 30rem;
+    }
 
 
-@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px){
+
+    header{
+        padding: 1rem 2rem;
+    }
+
+    nav, .hdr-btn{
+        display: flex;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .div-nav{
+        display: flex;        
+        align-items: center;
+    }
+
+    nav{
+        justify-content: space-between;
+        width: 30rem;
+    }
+
+    nav a{
+        color: #1E1E26;
+        font-weight: 500;
+    }
+
+    main{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 5rem 15rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
 
     header{
         padding: 4rem 8rem;
@@ -333,7 +454,7 @@ a{
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 5rem 15rem;
+        margin: 5rem 10rem;
     }
 
     .main-text{
@@ -362,7 +483,7 @@ a{
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 0 15rem;
+        margin: 0 10rem;
     }
 
     .diferencias-text{
@@ -387,11 +508,16 @@ a{
         background-color: transparent;
     }
 
+    .testimonios{
+        margin: 6rem 0;
+    }
+
     .testimonios>div{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-       
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
     }
 
     .puntitos{
@@ -410,6 +536,10 @@ a{
         padding: 1rem;
     }
 
+    .testimonios>div p {
+         width: 25rem; 
+    }
+
     .footer-1{
         flex-direction: row;
         justify-content: space-around;
@@ -424,6 +554,7 @@ a{
         align-items: flex-start;
         height: 15rem;
         padding: 4rem 5rem 0;
+        position: relative;
     }
 
     form{
@@ -452,12 +583,12 @@ a{
         width: 10rem;
     }
 
-    .redes img {
+    .redes a div{
         height: 1.5rem;
         width: 1.5rem;
     }
 
-    .redes a img:hover{
+    .redes a div:hover{
         fill: #F3613C;
     }
 
@@ -466,9 +597,8 @@ a{
         display: flex;
         order: 4;
         position: absolute;
-        top: 135rem;
-        left: 70rem;
-    
+        top: 166rem;
+        left: 53rem;
     }
 
    
